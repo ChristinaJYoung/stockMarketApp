@@ -1,0 +1,16 @@
+{
+  "name": "stockMarketApp",
+  "description": "",
+  "main": "server.js",
+  "license": "MIT",
+  "homepage": "https://github.com/ChristinaJYoung/stockMarketApp",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/lib",
+    "test",
+    "tests"
+  ]
+}

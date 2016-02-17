@@ -1,0 +1,32 @@
+{
+  "name": "stockMarketApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristinaJYoung/stockMarketApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChristinaJYoung/stockMarketApp/issues"
+  },
+  "homepage": "https://github.com/ChristinaJYoung/stockMarketApp#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cheerio": "^0.20.0",
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "lodash": "^4.4.0",
+    "mongoose": "^4.4.3",
+    "multer": "^1.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.8.1"
+  }
+}
