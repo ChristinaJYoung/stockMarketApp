@@ -2,7 +2,7 @@
 
 const app = require('express')();
 const bodyParser = require('body-parser');
-const = require('mongoose');
+const mongoose = require('mongoose');
 
 const routes = require('./routes/');
 
@@ -18,11 +18,24 @@ const MONGODB_AUTH = MONGODB_USER
   ? `${MONGODB_USER}:${MONGODB_PASS}@`
   : '';
 
-const MONGODB_URL = `mongodb://${MONGODB_AUTH}${MONGODB_HOST}:${MONGODB_PORT}/${MONGODB_NAME}`;
+const MONGODB_URL = `mongodb:/ //${MONGODB_AUTH}${MONGODB_HOST}:${MONGODB_PORT}/${MONGODB_NAME}`;
 
 app.set('view engine', 'jade');
 
 app.locals.title = 'Stock Market App';
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+app.use(routes);
+
+mongoose.connect(MONGODB_URL);
+
+mongoose.connection.on('open', () => {
+  app.listen(PORT, () => {
+    console.log(`Node.js server started. Listening on port ${PORT}`);
+  });
+});
 
 
 
