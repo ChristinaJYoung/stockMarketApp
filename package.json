@@ -2,9 +2,11 @@
   "name": "stockMarketApp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -24,7 +26,8 @@
     "jade": "^1.11.0",
     "lodash": "^4.4.0",
     "mongoose": "^4.4.3",
-    "multer": "^1.1.0"
+    "multer": "^1.1.0",
+    "request": "^2.69.0"
   },
   "devDependencies": {
     "nodemon": "^1.8.1"
